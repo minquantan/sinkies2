@@ -29,7 +29,26 @@ body {
 .navbar-list {
   list-style: none;
   display: flex;
-  gap: 60px;
+  gap: 40px;
+  align-items: center;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-menu{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: none;
 }
 
 @media (max-width: 480px) {
@@ -41,5 +60,14 @@ body {
   .navbar-logo {
     width: 100px;
     height: 55px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .navbar-list {
+    display: none;
+  }
+  #nav-toggle {
+    display: block;
   }
 }

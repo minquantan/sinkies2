@@ -18,7 +18,7 @@
   grid-template-columns: 1fr 1fr;
   align-content: center;
   gap: 20px;
-  padding: 30px;
+  padding: 20px;
 }
 
 @media (max-width: 360px) {
@@ -35,10 +35,21 @@
   }
 }
 
-@media (max-width: 1050px) and (min-width: 641px) {
+@media (max-width: 1319px) and (min-width: 720px) {
   .gridbox {
-    gap: 28px;
-    padding: 52px;
+    padding-top: 30px;
+    padding-left: 52px;
+    padding-right: 52px;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1320px) {
+  .gridbox {
+    padding-top: 30px;
+    padding-left: 52px;
+    padding-right: 52px;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

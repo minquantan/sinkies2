@@ -12,9 +12,9 @@ export default class extends Controller {
     const menu = document.querySelector(".dropdown-menu")
 
     if (menu.classList.contains("hidden")) {
-      menu.classList.remove("hidden")
-    } else {
-      menu.classList.add("hidden")
+      menu.classList.remove("hidden");
+    }  else {
+      menu.classList.add("hidden");
     }
   }
 }

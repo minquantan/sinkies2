@@ -1,0 +1,26 @@
+/* Colors */
+// // greens
+$green_background: #F5FFF5;
+$green_navbar: #026402;
+
+// // reds
+$red_btn: #FFC8C8;
+$red_logo: #FF0202;
+$red_text: #910202;
+$red_heading: #640202;
+
+// // to shade out background
+$opacity: #D9D9D9;
+
+/* Fonts */
+h1 {
+  font-family: 'Strait', sans-serif;
+}
+
+h4, p {
+  font-family: 'Sulphur Point', sans-serif;
+};
+
+.red {
+  color: $red_logo !important;
+}

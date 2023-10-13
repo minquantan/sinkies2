@@ -1,76 +1,10 @@
 @import "font-awesome";
+@import "color&font";
+@import "navbar";
 
 
 /* set the page so that navbar can extend fully over viewport */
 body {
   margin: 0;
   padding: 0;
-}
-
-.navbar {
-  height: 120px;
-  margin: 0;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-
-  // This must change depending on screen size
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.navbar-logo {
-  width: 150px;
-  height: 80px;
-}
-
-.navbar-list {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-#nav-toggle {
-  display: none;
-}
-
-
-.language-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.dropdown-menu{
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.hidden {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 80px;
-  }
-  .navbar-logo {
-    width: 100px;
-    height: 55px;
-  }
-}
-
-@media (max-width: 1050px) {
-  .navbar-list {
-    display: none;
-  }
-  #nav-toggle {
-    display: block;
-  }
 }

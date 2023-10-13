@@ -1,0 +1,41 @@
+<div
+data-controller='menu-dropdown'
+>
+  <div class='navbar'>
+    <div class="navbar-logo">
+      <%= link_to root_path do %>
+        <%= image_tag 'logo/main_logo.png' %>
+      <% end %>
+    </div>
+    <ul class="navbar-list">
+      <%= link_to "MENU", menu_path %>
+      <li>SPACE</li>
+      <li>PROMOTION</li>
+      <li>ABOUT</li>
+      <li>CONTACT</li>
+      <li>RESERVATIONS</li>
+      <div class="language-btn">
+        <p style="font-size:14px;">日本語 </p>
+        <%# <i class="fa-solid fa-caret-down inverted-triangle"></i> %>
+      </div>
+    </ul>
+    <div
+    data-controller='menu-dropdown'
+    data-action='click->menu-dropdown#display'
+    id='nav-toggle'>
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </div>
+  </div>
+
+  <div
+  class="dropdown-menu hidden">
+    <h3>MENU</h3>
+    <h3>SPACE</h3>
+    <h3>PROMOTION</h3>
+    <h3>ABOUT</h3>
+    <h3>CONTACT</h3>
+    <h3>RESERVATIONS</h3>
+    <h3>MENU</h3>
+    <h3>日本語</h3>
+  </div>
+</div>

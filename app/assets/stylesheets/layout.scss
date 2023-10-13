@@ -1,3 +1,5 @@
+@import "color&font";
+
 .page {
   width: 100vw;
   height: 100vh;
@@ -8,5 +10,35 @@
 
 .page-content {
   flex-grow: 1;
-  // background-color: black;
+  background-color: $green_background;
+}
+
+.gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+@media (max-width: 360px) {
+  .gridbox {
+    gap: 20px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 640px) and (min-width: 500px) {
+  .gridbox {
+    gap: 28px;
+    padding: 52px;
+  }
+}
+
+@media (max-width: 1050px) and (min-width: 641px) {
+  .gridbox {
+    gap: 28px;
+    padding: 52px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

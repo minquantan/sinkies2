@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   root to: "pages#home"
   get "about", to: "pages#about"
+  get "menu", to: "pages#menu"
 end

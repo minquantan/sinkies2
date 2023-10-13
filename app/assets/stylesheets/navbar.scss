@@ -1,3 +1,5 @@
+@import "color&font";
+
 .navbar {
   height: 120px;
   margin: 0;
@@ -24,30 +26,46 @@
   align-items: center;
   font-family: 'Sulphur Point', sans-serif;
   font-weight: bold;
-  color: $red_text;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  :hover {
+    cursor: pointer;
+    color: $red_text;
+  }
 }
 
 #nav-toggle {
   display: none;
+  :hover {
+    cursor: pointer;
+    color: $red_text;
+  }
 }
 
 
-.language-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
+// .language-btn {
+//   display: flex;
+//   align-items: center;
+//   gap: 6px;
+// }
 
 .dropdown-menu{
   height: 100%;
   width: 100%;
   text-align: center;
 
+  :hover {
+    cursor: pointer;
+    color: $red_text;
+  }
 
   h3 {
     font-family: 'Strait', sans-serif;
     margin: 40px;
-    // color: $red_heading;
   }
 }
 

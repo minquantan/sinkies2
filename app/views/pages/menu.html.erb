@@ -1,27 +1,49 @@
 <div class='page'>
+
   <%= render "navbar" %>
   <div class='page-content'>
-    <div class='gridbox'>
+    <div class='gridbox'
+    >
 
-      <div class="image-card">
+      <div class="image-card"
+      data-controller='modal'
+      data-action='click->modal#popup'>
         <%= image_tag 'zoo.jpeg' %>
       </div>
-      <div class="image-card">
+
+      <div class="image-card"
+      data-controller='modal'
+      data-action='click->modal#popup'>
         <%= image_tag 'zoo.jpeg' %>
       </div>
-      <div class="image-card">
+
+      <div class="image-card"
+      data-controller='modal'
+      data-action='click->modal#popup'>
         <%= image_tag 'zoo.jpeg' %>
       </div>
-      <div class="image-card">
+
+      <div class="image-card"
+      data-controller='modal'
+      data-action='click->modal#popup'>
         <%= image_tag 'zoo.jpeg' %>
       </div>
-      <div class="image-card">
+
+      <div class="image-card"
+      data-controller='modal'
+      data-action='click->modal#popup'>
         <%= image_tag 'zoo.jpeg' %>
       </div>
-      <div class="image-card">
+
+      <div class="image-card"
+      data-controller='modal'
+      data-action='click->modal#popup'>
         <%= image_tag 'zoo.jpeg' %>
       </div>
 
     </div>
   </div>
+</div>
+
+<div id='overlay'>
 </div>

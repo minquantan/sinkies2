@@ -1,0 +1,12 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // background-color: black;
+}
+
+.page-content {
+  flex-grow: 1;
+  // background-color: black;
+}

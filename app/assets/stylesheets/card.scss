@@ -59,3 +59,27 @@
     height: 100%;
   }
 }
+
+.mobile-card-content {
+  height: 50%;
+}
+
+.mobile-card-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  font-family: 'Strait', sans-serif;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.mobile-card-text {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}

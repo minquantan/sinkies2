@@ -9,8 +9,14 @@ export default class extends Controller {
 
   popup() {
     document.getElementById("overlay").classList.add("active");
-
     console.log(this.element);
+    const card = this.element.querySelector(".invisible");
+    console.log(card);
+    const preview = this.element.querySelector(".preview");
+    console.log(preview);
+
+    preview.classList.add("invisible");
+    card.classList.remove("invisible");
 
 
   }

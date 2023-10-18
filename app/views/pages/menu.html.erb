@@ -2,15 +2,17 @@
 
   <%= render "navbar" %>
   <div class='page-content'>
-    <%= render "main1" %>
-    <div class='gridbox'
-    >
+    <div class='gridbox'>
 
       <div class="image-card"
       data-controller='modal'
       data-action='click->modal#popup'>
-        <%= image_tag 'zoo.jpeg' %>
+        <%= image_tag 'zoo.jpeg', class: "preview" %>
+        <div class="invisible">
+          <%= render "main1" %>
+        </div>
       </div>
+
 
 
 

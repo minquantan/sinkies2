@@ -11,6 +11,7 @@
 .page-content {
   flex-grow: 1;
   background-color: $green_background;
+  position: relative;
 }
 
 .gridbox {
@@ -20,6 +21,8 @@
   gap: 20px;
   padding: 20px;
   pointer-events: none;
+  position: absolute;
+  top: 0px;
 }
 
 @media (max-width: 360px) {
@@ -68,6 +71,6 @@
   pointer-events: none;
 }
 
-#overlay.active {
-  opacity: 1;
-}
+// #overlay.active {
+//   opacity: 1;
+// }

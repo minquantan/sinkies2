@@ -4,19 +4,41 @@ export default class extends Controller {
   connect() {
     // this.element.textContent = "Hello World!"
     // console.log("works or no?")
-    console.log("Hello, Stimulus!", this.element)
+    console.log("---------------------------------Hello, Stimulus!--------------------------------")
   }
 
   popup() {
+    // activate overlay
     document.getElementById("overlay").classList.add("active");
-    console.log(this.element);
-    const card = this.element.querySelector(".invisible");
-    console.log(card);
-    const preview = this.element.querySelector(".preview");
-    console.log(preview);
 
-    preview.classList.add("invisible");
-    card.classList.remove("invisible");
+    // get the details of the selected menu item
+    const cardInfo = this.element.querySelector(".invisible").innerHTML;
+
+    // get the gridbox
+    const gridbox = document.querySelector(".gridbox");
+
+    // get the div that the menu item info will be inserted into
+    const selectedItem = document.getElementById("selected-item");
+
+    // nuke the gridbox
+    gridbox.classList.add("invisible");
+
+    // insert the content into popup
+    selectedItem.insertAdjacentHTML("afterbegin", cardInfo);
+  }
+
+  popdown() {
+  //de-activate overlay
+   document.getElementById("overlay").classList.remove("active");
+
+  // remove content from the menu item popup
+  const selectedItem = document.getElementById("selected-item");
+  selectedItem.innerHTML = '';
+
+  // remove invisible class from gridbox
+  document.querySelector(".gridbox").classList.remove("invisible");
+
+
 
 
   }

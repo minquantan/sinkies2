@@ -2,8 +2,13 @@
 
   <%= render "navbar" %>
   <div class='page-content'>
-    <div class='gridbox'>
 
+    <%# div for menu pop-up,higher z-index than gridbox %>
+    <div id='selected-item'>
+    </div>
+
+    <%# div for menu item thumbnails, position fixed to top of .page-content %>
+    <div class='gridbox'>
       <div class="image-card"
       data-controller='modal'
       data-action='click->modal#popup'>
@@ -12,10 +17,6 @@
           <%= render "main1" %>
         </div>
       </div>
-
-
-
-
     </div>
   </div>
 </div>

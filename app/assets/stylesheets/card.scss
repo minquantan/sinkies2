@@ -55,7 +55,6 @@
 
 //MOBILE SIZED CARD ------------------------------------------------------------
 .mobile-card {
-  z-index: 4;
   height: 720px;
   width: 100%;
   display: flex;
@@ -95,4 +94,53 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
+}
+
+@media (max-width: 500px) and (min-width: 431px) {
+  .mobile-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 460px;
+  }
+
+}
+
+// @media (max-width: 720px) and (min-width: 461px){
+//   .mobile-card {
+//     width: 186px;
+//     height: 186px;
+//   }
+// }
+
+@media (min-width: 901px) {
+  .mobile-card {
+    width: 800px;
+    height: 360px;
+    flex-direction: row;;
+    background-color: white;
+    padding: 40px;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .mobile-card-img {
+    height: 100%;
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #selected-item {
+    position: fixed;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+  }
 }

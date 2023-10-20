@@ -15,13 +15,13 @@ export default class extends Controller {
     const cardInfo = this.element.querySelector(".invisible").innerHTML;
 
     // get the gridbox
-    const gridbox = document.querySelector(".gridbox");
+    // const gridbox = document.querySelector(".gridbox");
 
     // get the div that the menu item info will be inserted into
     const selectedItem = document.getElementById("selected-item");
 
     // nuke the gridbox
-    gridbox.classList.add("invisible");
+    // gridbox.classList.add("invisible");
 
     // insert the content into popup
     selectedItem.insertAdjacentHTML("afterbegin", cardInfo);
@@ -37,10 +37,5 @@ export default class extends Controller {
 
   // remove invisible class from gridbox
   document.querySelector(".gridbox").classList.remove("invisible");
-
-
-
-
   }
-
 }

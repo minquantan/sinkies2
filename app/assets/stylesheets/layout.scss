@@ -35,7 +35,9 @@
 @media (max-width: 640px) and (min-width: 500px) {
   .gridbox {
     gap: 28px;
-    padding: 52px;
+    padding-top: 30px;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 }
 
@@ -71,6 +73,6 @@
   pointer-events: none;
 }
 
-// #overlay.active {
-//   opacity: 1;
-// }
+#overlay.active {
+  opacity: 1;
+}

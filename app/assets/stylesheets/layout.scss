@@ -9,6 +9,8 @@
 }
 
 .page-content {
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
   background-color: $green_background;
   position: relative;
@@ -16,45 +18,84 @@
 
 .gridbox {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-content: center;
-  gap: 20px;
-  padding: 20px;
+  justify-content: center;
   pointer-events: none;
   position: absolute;
   top: 0px;
+  margin: 4%;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .gridbox {
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 30px;
+    padding: 10%;
   }
 }
 
-@media (max-width: 640px) and (min-width: 500px) {
+@media (max-width: 450px) and (min-width: 381px) {
   .gridbox {
-    gap: 28px;
-    padding-top: 30px;
-    padding-left: 52px;
-    padding-right: 52px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 20px;
   }
 }
 
-@media (max-width: 1319px) and (min-width: 720px) {
+@media (max-width: 500px) and (min-width: 451px) {
+  .gridbox {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 640px) and (min-width: 501px) {
+  .gridbox {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 30px;
+  }
+}
+
+
+@media (max-width: 720px) and (min-width: 641px) {
   .gridbox {
     padding-top: 30px;
-    padding-left: 52px;
-    padding-right: 52px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 1320px) {
+@media (max-width: 900px) and (min-width: 721px) {
   .gridbox {
     padding-top: 30px;
-    padding-left: 52px;
-    padding-right: 52px;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .gridbox {
+    padding-top: 30px;
+    column-gap: 20%;
+    row-gap: 4%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1420px) and (min-width: 1101px) {
+  .gridbox {
+    padding-top: 30px;
+    column-gap: 8%;
+    row-gap: 4%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1420px) {
+  .gridbox {
+    padding-top: 30px;
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

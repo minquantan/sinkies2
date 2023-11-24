@@ -26,9 +26,12 @@ export default class extends Controller {
       // selectedItem.innerHTML = cardInfo;
     }
 
+    // remove "dormant" class so that the event won't fire again
     overlay.classList.remove("dormant");
     overlay.classList.add("active");
 
+    // stop cursor css
+    /* FIX THIS NEXT TIME */
   }
 
   popdown() {

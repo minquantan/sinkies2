@@ -7,29 +7,35 @@ export default class extends Controller {
     console.log("---------------------------------Hello, Stimulus!--------------------------------")
   }
 
-  popup() {
-    // activate overlay
-    document.getElementById("overlay").classList.add("active");
+  popup(event) {
 
-    // get the details of the selected menu item
-    const cardInfo = this.element.querySelector(".invisible").innerHTML;
+    // get the overlay
+    const overlay = document.getElementById("overlay")
 
-    // get the gridbox
-    // const gridbox = document.querySelector(".gridbox");
+    // only perform the action if the overlay is not active
+    if (overlay.classList.contains("dormant")) {
+      // get the details of the selected menu item
+      const cardInfo = this.element.querySelector(".invisible").innerHTML;
+      console.log(cardInfo);
 
-    // get the div that the menu item info will be inserted into
-    const selectedItem = document.getElementById("selected-item");
+      // get the div that the menu item info will be inserted into
+      const selectedItem = document.getElementById("selected-item");
 
-    // nuke the gridbox
-    // gridbox.classList.add("invisible");
+      // insert the content into popup
+      selectedItem.insertAdjacentHTML("afterbegin", cardInfo);
+      // selectedItem.innerHTML = cardInfo;
+    }
 
-    // insert the content into popup
-    selectedItem.insertAdjacentHTML("afterbegin", cardInfo);
+    overlay.classList.remove("dormant");
+    overlay.classList.add("active");
+
   }
 
   popdown() {
   //de-activate overlay
-   document.getElementById("overlay").classList.remove("active");
+  const overlay = document.getElementById("overlay")
+  overlay.classList.remove("active");
+  overlay.classList.add("dormant");
 
   // remove content from the menu item popup
   const selectedItem = document.getElementById("selected-item");
